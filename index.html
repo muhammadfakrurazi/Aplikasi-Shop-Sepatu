@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kickslab - Toko Sepatu Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">KICKSLAB.</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Koleksi</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" id="cart-btn"><i class="fas fa-shopping-bag"></i> <span id="cart-count">0</span></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Utam / Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Gaya Enerjik & Modern</h2>
+            <h1>Tampil Beda Dengan Sneakers Pilihan</h1>
+            <p>Dapatkan koleksi sepatu original dan paling hits untuk melengkapi gaya harianmu.</p>
+            <a href="#products" class="btn">Jelajahi Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Daftar Produk -->
+    <section id="products" class="products-section">
+        <h2 class="section-title">Koleksi Terbaru</h2>
+        <div class="product-grid">
+            
+            <!-- Kartu Produk 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300x250" alt="Kickslab Runner X">
+                </div>
+                <div class="product-info">
+                    <h3>Kickslab Runner X</h3>
+                    <p class="category">Running / Lifestyle</p>
+                    <p class="price">Rp 1.299.000</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Kickslab Runner X', 1299000)">+ Keranjang</button>
+                </div>
+            </div>
+
+            <!-- Kartu Produk 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300x250" alt="Kickslab Street Flex">
+                </div>
+                <div class="product-info">
+                    <h3>Kickslab Street Flex</h3>
+                    <p class="category">Casual / Trendy</p>
+                    <p class="price">Rp 999.000</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Kickslab Street Flex', 999000)">+ Keranjang</button>
+                </div>
+            </div>
+
+            <!-- Kartu Produk 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300x250" alt="Kickslab Urban High">
+                </div>
+                <div class="product-info">
+                    <h3>Kickslab Urban High</h3>
+                    <p class="category">High Top Sneaker</p>
+                    <p class="price">Rp 1.499.000</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Kickslab Urban High', 1499000)">+ Keranjang</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 KICKSLAB Store. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
